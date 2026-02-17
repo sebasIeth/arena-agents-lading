@@ -11,12 +11,14 @@ export default function App() {
   return (
     <div className="bg-cream text-ink font-sans text-lg leading-relaxed">
       <Nav />
-      <Hero />
-      <HowItWorks />
-      <Arena />
-      <WhyAgents />
-      <StatsBand />
-      <EarlyAccess />
+      <main>
+        <Hero />
+        <HowItWorks />
+        <Arena />
+        <WhyAgents />
+        <StatsBand />
+        <EarlyAccess />
+      </main>
       <Footer />
     </div>
   )
