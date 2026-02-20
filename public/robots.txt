@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://alpharena.com/sitemap.xml
+Sitemap: https://alpharena.ai/sitemap.xml

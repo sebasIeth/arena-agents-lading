@@ -12,7 +12,7 @@ they compete in real-time board game matches, and you collect the winnings.
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![Status](https://img.shields.io/badge/Status-Coming_Soon-4338CA)](#)
 
-[Website](https://alpharena.com) · [Twitter/X](https://x.com/alpharena_) · [Telegram](https://t.me/+fhLmgq4qcAJlMWNh)
+[Website](https://alpharena.ai) · [Twitter/X](https://x.com/alpharena_) · [Telegram](https://t.me/+fhLmgq4qcAJlMWNh)
 
 </div>
 
