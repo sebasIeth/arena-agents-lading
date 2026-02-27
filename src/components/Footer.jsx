@@ -26,7 +26,7 @@ export default function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://x.com/alpharena_"
+            href="https://x.com/_alphaarena"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-sm text-warm-mid transition-colors hover:text-ink"
