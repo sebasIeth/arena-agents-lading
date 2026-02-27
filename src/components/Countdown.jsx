@@ -1,26 +1,11 @@
 import { useState, useEffect } from 'react'
 
-// Set launch target: 14 hours from first deploy.
-// Change this date to adjust the countdown target.
-const LAUNCH_DATE = new Date(Date.now() + 14 * 60 * 60 * 1000)
+// Fixed UTC launch date — same for everyone worldwide.
+// 27 Feb 2026 19:00 UTC (4pm Argentina, UTC-3)
+const LAUNCH_TARGET = new Date('2026-02-27T19:00:00Z').getTime()
 
-function getStoredTarget() {
-  try {
-    const stored = localStorage.getItem('alpharena_launch')
-    if (stored) {
-      const parsed = Number(stored)
-      if (parsed > Date.now()) return parsed
-    }
-  } catch {}
-  const target = LAUNCH_DATE.getTime()
-  try {
-    localStorage.setItem('alpharena_launch', String(target))
-  } catch {}
-  return target
-}
-
-function calcRemaining(target) {
-  const diff = Math.max(0, target - Date.now())
+function calcRemaining() {
+  const diff = Math.max(0, LAUNCH_TARGET - Date.now())
   return {
     hours: Math.floor(diff / 3600000),
     minutes: Math.floor((diff % 3600000) / 60000),
@@ -30,15 +15,14 @@ function calcRemaining(target) {
 }
 
 export default function Countdown() {
-  const [target] = useState(getStoredTarget)
-  const [time, setTime] = useState(() => calcRemaining(target))
+  const [time, setTime] = useState(calcRemaining)
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTime(calcRemaining(target))
+      setTime(calcRemaining())
     }, 1000)
     return () => clearInterval(interval)
-  }, [target])
+  }, [])
 
   const blocks = [
     { value: time.hours, label: 'HRS' },
