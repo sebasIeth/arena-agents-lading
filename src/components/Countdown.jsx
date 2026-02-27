@@ -32,7 +32,7 @@ export default function Countdown() {
 
   if (time.total <= 0) {
     return (
-      <div className="mt-10">
+      <div>
         <a
           href="https://app.alpharena.ai/"
           target="_blank"
@@ -60,7 +60,7 @@ export default function Countdown() {
   }
 
   return (
-    <div className="mt-10">
+    <div>
       <div className="flex items-center gap-2 mb-4">
         <span className="block w-2 h-2 rounded-full bg-indigo animate-[pulse-dot_1.5s_ease-in-out_infinite]" />
         <span className="text-[0.8125rem] font-semibold uppercase tracking-[0.2em] text-indigo">
