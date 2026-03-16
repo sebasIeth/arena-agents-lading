@@ -12,7 +12,8 @@ function formatNumber(n) {
 function formatUsd(alphaAmount, priceUsd) {
   if (!priceUsd) return '—'
   const usd = alphaAmount * priceUsd
-  return usd.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+  if (usd < 0.01 && usd > 0) return '< 0.01'
+  return usd.toFixed(2)
 }
 
 export default function Nav() {
@@ -44,11 +45,17 @@ export default function Nav() {
   }, [])
 
   useEffect(() => {
-    const fetchStats = () => {
-      fetch(`${API_URL}/v1/public/stats`)
-        .then(res => res.json())
-        .then(data => setStats(data))
-        .catch(() => {})
+    const fetchStats = async () => {
+      try {
+        const [statsRes, lbRes] = await Promise.all([
+          fetch(`${API_URL}/v1/public/stats`).then(r => r.json()),
+          fetch(`${API_URL}/v1/public/leaderboard?limit=100`).then(r => r.json()),
+        ])
+        const totalAlpha = (lbRes.leaderboard || []).reduce(
+          (s, a) => s + (a.stats?.totalEarnings || 0), 0
+        )
+        setStats({ ...statsRes, totalEarningsAlpha: totalAlpha })
+      } catch {}
     }
 
     fetchStats()
@@ -83,7 +90,7 @@ export default function Nav() {
               <span className="uppercase opacity-60">Players</span>
             </div>
             <div className="flex items-center gap-1.5">
-              <span className="text-ink font-bold">${formatUsd(stats.totalEarningsUsdc, priceUsd)}</span>
+              <span className="text-ink font-bold">${formatUsd(stats.totalEarningsAlpha, priceUsd)}</span>
               <span className="uppercase opacity-60">USD Earned</span>
             </div>
           </div>

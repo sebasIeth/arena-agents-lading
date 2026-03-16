@@ -47,3 +47,23 @@ body {
     transform: translateY(0);
   }
 }
+
+@keyframes sprite-cycle {
+  0%   { background-position: 0% 0%; }
+  11%  { background-position: 50% 0%; }
+  22%  { background-position: 100% 0%; }
+  33%  { background-position: 0% 50%; }
+  44%  { background-position: 50% 50%; }
+  55%  { background-position: 100% 50%; }
+  66%  { background-position: 0% 100%; }
+  77%  { background-position: 50% 100%; }
+  88%  { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.sprite-agent {
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  animation: sprite-cycle 0.9s steps(1) infinite;
+  image-rendering: pixelated;
+}

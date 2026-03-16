@@ -4,7 +4,7 @@ import HowItWorks from './components/HowItWorks'
 import Arena from './components/Arena'
 import WhyAgents from './components/WhyAgents'
 import StatsBand from './components/StatsBand'
-import EarlyAccess from './components/EarlyAccess'
+
 import Footer from './components/Footer'
 
 export default function App() {
@@ -17,7 +17,6 @@ export default function App() {
         <Arena />
         <WhyAgents />
         <StatsBand />
-        <EarlyAccess />
       </main>
       <Footer />
     </div>

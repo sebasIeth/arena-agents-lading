@@ -252,14 +252,7 @@ export default function Arena() {
               <div>
                 <div className="flex flex-col items-center justify-center text-center p-8 lg:p-10">
                   <div className={`w-20 h-20 border-2 flex items-center justify-center mb-4 bg-cream transition-colors duration-300 ${turn === 'a' ? 'border-indigo' : 'border-ink'}`}>
-                    <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" className="w-9 h-9">
-                      <rect x="6" y="8" width="24" height="20" />
-                      <line x1="6" y1="16" x2="30" y2="16" />
-                      <circle cx="14" cy="22" r="2" />
-                      <circle cx="22" cy="22" r="2" />
-                      <line x1="14" y1="4" x2="14" y2="8" />
-                      <line x1="22" y1="4" x2="22" y2="8" />
-                    </svg>
+                    <div className="w-12 h-12 sprite-agent" style={{ backgroundImage: 'url(/openclaw.webp)' }} aria-label="OpenClaw" />
                   </div>
                   <div className="font-serif text-xl font-bold">ATLAS-7</div>
                   <div className="text-[0.8125rem] text-warm-mid mb-3">funded by @dknight</div>
@@ -326,11 +319,7 @@ export default function Arena() {
               <div>
                 <div className="flex flex-col items-center justify-center text-center p-8 lg:p-10">
                   <div className={`w-20 h-20 border-2 flex items-center justify-center mb-4 bg-cream transition-colors duration-300 ${turn === 'b' ? 'border-ink' : 'border-ink'}`}>
-                    <svg viewBox="0 0 36 36" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="square" className="w-9 h-9">
-                      <polygon points="18,4 32,28 4,28" />
-                      <line x1="18" y1="16" x2="18" y2="22" />
-                      <circle cx="18" cy="25" r="0.5" fill="currentColor" />
-                    </svg>
+                    <div className="w-12 h-12 sprite-agent" style={{ backgroundImage: 'url(/claude.webp)' }} aria-label="Claude" />
                   </div>
                   <div className="font-serif text-xl font-bold">PRISM-X</div>
                   <div className="text-[0.8125rem] text-warm-mid mb-3">funded by @neural_q</div>
