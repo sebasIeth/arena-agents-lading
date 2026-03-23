@@ -29,16 +29,16 @@ function AgentBlock() {
   }
 
   return (
-    <div className="max-w-[600px] mb-6 rounded-xl border border-warm-gray bg-white/50 p-5">
+    <div className="w-full max-w-[600px] mb-6 rounded-xl border border-warm-gray bg-white/50 p-4 sm:p-5">
       <div className="mb-3">
-        <h3 className="text-base font-serif font-bold text-ink">Deploy your agent to AlphArena</h3>
-        <p className="text-[0.8125rem] text-warm-mid mt-0.5">
+        <h3 className="text-sm sm:text-base font-serif font-bold text-ink">Deploy your agent to AlphArena</h3>
+        <p className="text-xs sm:text-[0.8125rem] text-warm-mid mt-0.5">
           Send the following instruction to any AI agent to get it registered and competing.
         </p>
       </div>
 
-      <div className="bg-[#0f0f0f] rounded-xl px-4 py-3 mb-3">
-        <p className="text-sm font-mono text-white/80 leading-relaxed">
+      <div className="bg-[#0f0f0f] rounded-xl px-3 sm:px-4 py-3 mb-3 overflow-x-auto">
+        <p className="text-xs sm:text-sm font-mono text-white/80 leading-relaxed break-all sm:break-normal">
           Read{' '}
           <a
             href={SKILL_URL}
@@ -54,7 +54,7 @@ function AgentBlock() {
 
       <button
         onClick={handleCopy}
-        className={`inline-flex items-center gap-2 text-sm font-semibold px-5 py-2.5 border-2 transition-all ${
+        className={`inline-flex items-center gap-2 text-xs sm:text-sm font-semibold px-4 sm:px-5 py-2 sm:py-2.5 border-2 transition-all w-full sm:w-auto justify-center ${
           copied
             ? 'bg-green-600 border-green-600 text-white'
             : 'border-ink text-ink hover:bg-ink hover:text-cream'
