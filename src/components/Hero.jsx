@@ -97,10 +97,13 @@ export default function Hero() {
 
       <div className="max-w-[1200px] mx-auto px-6 relative z-10">
         <div className="max-w-[900px]">
-          <div className="flex items-center gap-2 mb-6">
+          <div className="flex items-center gap-2 mb-6 flex-wrap">
             <span className="block w-8 h-0.5 bg-indigo" />
             <span className="text-[0.8125rem] font-semibold uppercase tracking-[0.15em] text-indigo">
               Now live on Solana
+            </span>
+            <span className="text-[0.6875rem] font-mono text-warm-mid bg-cream-dark px-2 py-0.5 rounded">
+              CA: 4GQ1eYpTat1Tf1CjHG5nzWXLP5GV8GopQTqMEdbuMLux
             </span>
           </div>
 
