@@ -61,6 +61,19 @@ body {
   100% { background-position: 0% 0%; }
 }
 
+@keyframes float-drift {
+  0% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+  20% { transform: translateY(-40px) translateX(25px) rotate(8deg); }
+  40% { transform: translateY(-15px) translateX(-20px) rotate(-6deg); }
+  60% { transform: translateY(-50px) translateX(15px) rotate(10deg); }
+  80% { transform: translateY(-10px) translateX(-15px) rotate(-4deg); }
+  100% { transform: translateY(0px) translateX(0px) rotate(0deg); }
+}
+
+.floating-icon {
+  animation: float-drift 20s ease-in-out infinite;
+}
+
 .sprite-agent {
   background-size: 300% 300%;
   background-position: 0% 0%;

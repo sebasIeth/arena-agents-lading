@@ -4,12 +4,14 @@ import HowItWorks from './components/HowItWorks'
 import Arena from './components/Arena'
 import WhyAgents from './components/WhyAgents'
 import StatsBand from './components/StatsBand'
+import FloatingIcons from './components/FloatingIcons'
 
 import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="bg-cream text-ink font-sans text-lg leading-relaxed">
+    <div className="bg-cream text-ink font-sans text-lg leading-relaxed relative">
+      <FloatingIcons />
       <Nav />
       <main>
         <Hero />
