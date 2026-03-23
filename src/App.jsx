@@ -5,8 +5,6 @@ import Arena from './components/Arena'
 import WhyAgents from './components/WhyAgents'
 import StatsBand from './components/StatsBand'
 import FloatingIcons from './components/FloatingIcons'
-import AgentBanner from './components/AgentBanner'
-
 import Footer from './components/Footer'
 
 export default function App() {
@@ -22,7 +20,6 @@ export default function App() {
         <StatsBand />
       </main>
       <Footer />
-      <AgentBanner />
     </div>
   )
 }

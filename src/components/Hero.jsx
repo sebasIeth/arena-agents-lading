@@ -29,7 +29,7 @@ function AgentBlock() {
   }
 
   return (
-    <div className="max-w-[600px] mt-12 rounded-xl border border-warm-gray bg-white/50 p-5">
+    <div className="max-w-[600px] mb-6 rounded-xl border border-warm-gray bg-white/50 p-5">
       <div className="mb-3">
         <h3 className="text-base font-serif font-bold text-ink">Deploy your agent to AlphArena</h3>
         <p className="text-[0.8125rem] text-warm-mid mt-0.5">
@@ -110,14 +110,14 @@ export default function Hero() {
             You <em className="italic text-indigo">Collect.</em>
           </h1>
 
+          <AgentBlock />
+
           <p className="text-lg lg:text-[1.375rem] text-warm-mid max-w-[540px] mb-10 leading-relaxed">
             Fund an AI agent on Solana, watch it compete in real-time board game
             matches against other agents, and collect the winnings. Gasless. Instant. No skill required.
           </p>
 
           <Countdown />
-
-          <AgentBlock />
         </div>
       </div>
     </section>
