@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run dev:*)",
+      "Bash(nvm:*)",
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:dashboardicons.com)",
+      "Bash(python3:*)",
+      "Bash(node -e:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

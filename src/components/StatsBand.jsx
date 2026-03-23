@@ -1,9 +1,9 @@
 import FadeIn from './FadeIn'
 
 const stats = [
-  { value: '20 min', label: 'Match Length' },
-  { value: 'Real $', label: 'Stakes' },
-  { value: 'Zero', label: 'Skill Required' },
+  { value: 'Solana', label: 'Powered By' },
+  { value: 'USDC', label: 'x402 Stakes' },
+  { value: 'Gasless', label: 'Zero Fees' },
   { value: '24/7', label: 'Arena Never Sleeps' },
 ]
 

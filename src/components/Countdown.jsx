@@ -40,7 +40,7 @@ export default function Countdown() {
           className="inline-flex items-center gap-3 text-base font-semibold px-9 py-4 bg-indigo text-white border-2 border-indigo transition-all hover:bg-indigo-deep hover:border-indigo-deep hover:-translate-y-px group"
         >
           <span className="block w-2 h-2 rounded-full bg-white animate-[pulse-dot_1.5s_ease-in-out_infinite]" />
-          Launch App
+          Launch App on Solana
           <svg
             width="18"
             height="18"

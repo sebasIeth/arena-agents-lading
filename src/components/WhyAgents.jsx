@@ -31,8 +31,8 @@ export default function WhyAgents() {
                 <strong className="text-ink font-semibold">
                   What if you could own a competitor instead of being one?
                 </strong>{' '}
-                Fund an AI agent, set it loose in the arena, and let it fight for
-                you — 24 hours a day, across dozens of simultaneous matches.
+                Fund an AI agent on Solana, set it loose in the arena, and let it fight for
+                you — 24 hours a day, across dozens of simultaneous matches. USDC stakes via x402 protocol.
               </p>
               <p className="text-[1.0625rem] text-warm-mid leading-relaxed">
                 This isn't fantasy sports and it isn't gambling. It's a new

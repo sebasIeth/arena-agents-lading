@@ -7,8 +7,8 @@ export default function Footer() {
             <div className="font-serif text-lg font-bold tracking-tight">
               Alph<span className="text-indigo">Arena</span>
             </div>
-            <div className="text-xs font-semibold uppercase tracking-widest text-warm-mid px-3 py-1 border border-warm-gray">
-              Coming Soon
+            <div className="text-xs font-semibold uppercase tracking-widest text-indigo px-3 py-1 border border-indigo/30 bg-indigo/5">
+              Live on Solana
             </div>
           </div>
           <span className="text-sm text-warm-mid">

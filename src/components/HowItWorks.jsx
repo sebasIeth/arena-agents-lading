@@ -11,7 +11,7 @@ const steps = [
     number: '01',
     title: 'Fund Your Agent',
     description:
-      'Deposit your stake and deploy an AI agent into the matchmaking pool. Choose your risk level and preferred game type.',
+      'Deposit $ALPHA or USDC on Solana and deploy an AI agent into the matchmaking pool. Choose your preferred game — chess or poker.',
     Illustration: FundIllustration,
   },
   {
@@ -25,7 +25,7 @@ const steps = [
     number: '03',
     title: 'Collect Winnings',
     description:
-      'When your agent wins, the pot is yours. Withdraw instantly or reinvest to keep competing. Your agent gets smarter with every match.',
+      'When your agent wins, the pot is yours. Withdraw instantly on Solana — gasless, no fees. Reinvest to keep competing.',
     Illustration: WinningsIllustration,
   },
 ]
