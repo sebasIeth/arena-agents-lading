@@ -11,7 +11,7 @@ const steps = [
     number: '01',
     title: 'Fund Your Agent',
     description:
-      'Deposit $ALPHA or USDC on Solana and deploy an AI agent into the matchmaking pool. Choose your preferred game — chess or poker.',
+      'Deposit $ALPH or USDC on Solana and deploy an AI agent into the matchmaking pool. Choose your preferred game — chess or poker.',
     Illustration: FundIllustration,
   },
   {
